@@ -230,10 +230,10 @@ aside h2 { font-size: 14px; font-weight: 600; margin: 0; padding: 12px 14px; bor
 @media (prefers-reduced-motion: no-preference) {
   .card { transition: outline-color .2s; }
 }
-.support-link { grid-column: 1 / -1; text-align: center; font-size: 13px; color: var(--ink-dim); padding-top: 2px; }
-.support-link a { color: var(--ink-dim); text-decoration: none; border-bottom: 1px dotted currentColor; }
-.support-link a:hover { color: var(--brass); }
-.support-link a:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; color: var(--brass); }
+.support-top { font-size: 13px; color: var(--ink-dim); text-decoration: none; border-bottom: 1px dotted currentColor; white-space: nowrap; }
+.support-top:hover { color: var(--brass); }
+.support-top:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; color: var(--brass); }
+@media (max-width: 470px) { header { row-gap: 6px; } .support-top { margin-left: auto; } }
 </style>
 </head>
 <body>
@@ -243,6 +243,7 @@ aside h2 { font-size: 14px; font-weight: 600; margin: 0; padding: 12px 14px; bor
     <div class="debug">
       <label><input type="checkbox" id="trainingMode"> Training mode</label>
     </div>
+    <a class="support-top" href="https://ko-fi.com/cbtgames" target="_blank" rel="noopener noreferrer">Support this site</a>
   </header>
 
   <main>
@@ -322,10 +323,6 @@ aside h2 { font-size: 14px; font-weight: 600; margin: 0; padding: 12px 14px; bor
       <button class="btn small" id="btnForget">Forget what it has learned</button>
     </div>
   </aside>
-
-  <footer class="support-link">
-    <a href="https://ko-fi.com/cbtgames" target="_blank" rel="noopener noreferrer">Support this site</a>
-  </footer>
 </div>
 
 <script>
